@@ -13,13 +13,13 @@ img{
 .dag {
   background-image: url("images/dag.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .nacht {
   background-image: url("images/nacht.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 @media only screen and (max-width: 639px){
