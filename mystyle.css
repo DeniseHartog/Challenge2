@@ -41,6 +41,7 @@ img{
   grid-column: 1;
   grid-row: 2 ;
   margin: 0 auto;
+  max-width: 500px;
 }
 .raket{
   grid-column: 1 / 4;
