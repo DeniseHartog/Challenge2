@@ -13,20 +13,42 @@ img{
 .dag {
   background-image: url("images/dag.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .nacht {
   background-image: url("images/nacht.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 @media only screen and (max-width: 639px){
-.dag {
-  background-image: url("images/dag2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+
+.wrapper{  
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(200px, auto);
+}
+.datum{
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+    margin-top: 200px;
+    font-size: 16px;
+}
+.klok{
+  grid-column: 1;
+  grid-row: 2 ;
+  margin: 0 auto;
+}
+.raket{
+  grid-column: 1 / 4;
+  grid-row: 3;
+  margin-top: -70px;
+}
+img{
+  max-width: 80px;
 }
 }
 
@@ -57,17 +79,7 @@ img{
 img{
   max-width: 60px;
 }
-.dag {
-  background-image: url("images/dag.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
-.nacht {
-  background-image: url("images/nacht.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 }
 
 @media only screen and (min-width: 759px) and (max-width: 800px){
@@ -97,17 +109,7 @@ img{
 img{
   max-width: 80px;
 }
-.dag {
-  background-image: url("images/dag.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
-.nacht {
-  background-image: url("images/nacht.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 }
 
 @media only screen and (min-width: 801px) and (max-width: 1600px){
@@ -137,15 +139,5 @@ img{
 img{
   max-width: 100px;
 }
-.dag {
-  background-image: url("images/dag.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
-.nacht {
-  background-image: url("images/nacht.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 }
