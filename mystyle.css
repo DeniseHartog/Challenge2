@@ -10,6 +10,11 @@ body{
 img{
 	max-width: 50px;
 }
+.klok{
+  display: flex;
+  flex-wrap: nowrap; 
+  flex-flow: column;
+}
 .dag {
   background-image: url("images/dag.jpg");
   background-repeat: no-repeat;
@@ -42,8 +47,6 @@ img{
   grid-row: 2 ;
   margin: 0 auto;
   max-width: 500px;
-  display: flex;
-  flex-wrap: nowrap;
 }
 .raket{
   grid-column: 1 / 4;
