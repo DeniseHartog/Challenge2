@@ -4,22 +4,7 @@
 		<meta charset="utf-8">
 		<title>Chellange 2</title>
 		<link rel="stylesheet" type="text/css" href="mystyle.css">
-		<link rel="stylesheet" type="text/css" href="clock/flipclock.css">
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-		<script type="text/javascript" src="clock/flipclock.js"></script>
-		<style text="text/css">body .flip-clock-wrapper ul li a div div.inn, body .flip-clock-small-wrapper ul li a div div.inn { color: #CCCCCC; background-color: #333333; } body .flip-clock-dot, body .flip-clock-small-wrapper .flip-clock-dot { background: #323434; } body .flip-clock-wrapper .flip-clock-meridium a, body .flip-clock-small-wrapper .flip-clock-meridium a { color: #323434; }</style>
-		<script type="text/javascript">
-		$(function(){
-		FlipClock.Lang.Custom = { days:'Days', hours:'Hours', minutes:'Minutes', seconds:'Seconds' };
-		var opts = {
-		clockFace: 'TwentyFourHourClock',
-		countdown: true,
-		language: 'Custom'
-	}; 
-	$('.clock-builder-output').FlipClock(opts); 
-});
-</script>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -27,7 +12,7 @@
   				<p id="message"></p>
   			</div>
   			<div class="klok">
-				<div class="clock-builder-output"></div>
+				<div id="clock" class="klok"></div>
   			</div>
   			<div class="raket">
 				<img id="mainHeading" src="images/rocket-2442125_960_720.png">
@@ -41,6 +26,7 @@
 		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script> -->
 		<script src="main.js"></script>
 		<script src="main2.js"></script>
+		<script src="main3.js"></script>
 		<script type="text/javascript">
 
 		var currentTime = new Date().getHours();
