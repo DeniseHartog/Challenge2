@@ -3,7 +3,7 @@
 
 var today = new Date();
 
-document.getElementById('message').innerHTML = today.toString();
+document.getElementById('message').innerHTML = today.toDateString();
 
 //document.getElementById('message').innerHTML = today.getMonth();
 //document.getElementById('message').innerHTML = today.getYear();
